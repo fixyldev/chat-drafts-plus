@@ -5,6 +5,10 @@ plugins {
 version = project.mod_version
 group = project.maven_group
 
+base {
+    archivesName = "${project.archives_base_name}-fabric"
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
 
@@ -35,7 +39,14 @@ jar {
     def projectName = project.name
     inputs.property "projectName", projectName
 
-    from("LICENSE") {
-        rename { "${it}_$projectName"}
+    from "LICENSE"
+}
+
+sourcesJar {
+    def version = project.version
+    filesMatching("fabric.mod.json") {
+        expand "version": version
     }
+
+    from "LICENSE"
 }
