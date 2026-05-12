@@ -3,7 +3,7 @@
     "id": "chatdraftsplus",
     "version": "${version}",
     "name": "Chat Drafts+",
-    "description": "Chat Drafts+ is a mod for Minecraft Java Edition that changes the way unsent chat messages are restored.",
+    "description": "Chat Drafts+ is a mod for Minecraft Java Edition that changes how unsent chat messages are restored.",
     "authors": [
         "fixyldev"
     ],
