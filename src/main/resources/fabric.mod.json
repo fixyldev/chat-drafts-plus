@@ -1,0 +1,28 @@
+{
+    "schemaVersion": 1,
+    "id": "chatdraftsplus",
+    "version": "${version}",
+    "name": "Chat Drafts+",
+    "description": "Chat Drafts+ is a mod for Minecraft Java Edition that changes the way unsent chat messages are restored.",
+    "authors": [
+        "fixyldev"
+    ],
+    "contact": {
+        "homepage": "https://modrinth.com/mod/chat-drafts-plus",
+        "issues": "https://github.com/fixyldev/chat-drafts-plus/issues",
+        "sources": "https://github.com/fixyldev/chat-drafts-plus"
+    },
+    "license": "MIT",
+    "environment": "client",
+    "entrypoints": {},
+    "mixins": [
+        {
+            "config": "chatdraftsplus.mixins.json",
+            "environment": "client"
+        }
+    ],
+    "depends": {
+        "fabricloader": ">=0.19.2",
+        "minecraft": "~26.1"
+    }
+}
